@@ -4,12 +4,11 @@
   "description": "AI-powered onboarding assistant with multi-modal interactions",
   "private": true,
   "scripts": {
-    "start": "./start.sh",
-    "dev": "./start.sh",
-    "backend": "cd backend && python start.py",
+    "start": "./run.sh",
+    "dev": "./run.sh",
+    "backend": "cd backend && python main.py",
     "frontend": "cd frontend && npm run dev",
     "install": "cd backend && pip install -r requirements.txt && cd ../frontend && npm install",
-    "test": "cd backend && pytest tests/ && cd ../frontend && npm test",
     "build": "cd frontend && npm run build",
     "clean": "cd backend && rm -rf __pycache__ .pytest_cache && cd ../frontend && rm -rf node_modules dist"
   },
