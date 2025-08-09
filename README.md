@@ -4,12 +4,13 @@ A modern AI-powered onboarding assistant with voice capabilities, calendar integ
 
 ## Features
 
-- AI-powered chat interface (Gemini/Claude)
-- Voice interaction support
-- Calendar integration
-- Authentication system
-- Dashboard analytics
-- Real-time WebSocket communication
+- 🤖 AI-powered chat interface (Gemini/Claude)
+- 🎙️ **Voice Navigation** - Control the app with voice commands using Gemini Live API
+- 📅 Calendar integration
+- 🔐 Authentication system
+- 📊 Dashboard analytics
+- 🔄 Real-time WebSocket communication
+- 🖥️ Screen-aware voice assistant
 
 ## Quick Start
 
@@ -30,9 +31,35 @@ cd ai_agent
 ```
 
 The application will be available at:
-- Frontend: http://localhost:5173
+- Frontend: http://localhost:3000
 - Backend API: http://localhost:8000
 - API Docs: http://localhost:8000/docs
+
+### 🎙️ Voice Navigation (Optional)
+
+For hands-free control using voice commands:
+
+```bash
+# Set up voice navigation
+cd voice
+./install_deps.sh
+
+# Set your Gemini API key
+export GEMINI_API_KEY="your-api-key-here"
+
+# Test the setup
+python test_voice.py
+
+# Start voice navigation
+python voice_navigator.py
+```
+
+**Voice Commands:**
+- "Go to dashboard" - Navigate to dashboard
+- "Open chat" - Navigate to chat page
+- "Login" - Quick login with demo credentials
+- "Scroll down" - Scroll the page
+- "Click [element]" - Click on UI elements
 
 ### Manual Setup
 
